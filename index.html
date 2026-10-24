@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title and logo -->
+    <title>English Vocabulary | Vocabulary for Kids</title>
+    <link rel="icon" type="image/x-icon" href="./assets/logo-2.png" />
+
+    <!-- font awesome integration -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font integration -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind and DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="navbar bg-base-100 shadow-sm">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                aria-label="Menu"
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a href="" class=""
+                  ><i class="fa-regular fa-circle-question"></i> FAQ</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-book-open"></i> Learn</a
+                >
+              </li>
+              <li>
+                <a href="" class=""
+                  ><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="flex items-center gap-1">
+            <img src="assets/logo-2.png" width="100px" alt="Logo" />
+            <span class="text-xs md:text-lg font-bold">Vocabulary for</span>
+            <span class="md:text-lg text-red-600 font-semibold pl-4 md:pl-0"
+              >Kids</span
+            >
+          </a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 space-x-4">
+            <li>
+              <a href="" class="btn btn-outline btn-red">
+                <i class="fa-regular fa-circle-question"></i> FAQ
+              </a>
+            </li>
+            <li>
+              <a href="" class="btn btn-outline btn-red"
+                ><i class="fa-solid fa-book-open"></i> Learn</a
+              >
+            </li>
+            <li>
+              <a href="" class="btn btn-outline btn-red"
+                ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Hero section -->
+    <section
+      class="flex flex-col-reverse md:flex-row items-center py-5 w-11/12 mx-auto gap-10"
+    >
+      <div class="content flex-1 text-center md:text-left">
+        <h1 class="text-4xl font-bold mb-8">
+          <span class="text-red-600">English</span> is Easy!!
+        </h1>
+        <p class="text-xl font-bangla mb-6">
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+          অন্য একটি Level এ
+        </p>
+        <form class="fieldset rounded-box w-xs p-4 mx-auto md:mx-0">
+          <fieldset class="fieldset">
+            <input
+              type="email"
+              class="input validator"
+              placeholder="Enter your email"
+              required
+            />
+            <p class="validator-hint hidden">Required</p>
+          </fieldset>
+
+          <label class="fieldset">
+            <input
+              type="password"
+              class="input validator"
+              placeholder="Password"
+              required
+            />
+            <span class="validator-hint hidden">Required</span>
+          </label>
+
+          <button
+            class="btn bg-[#EA0035] border-[#EA0035] text-white w-full text-left mt-4"
+            type="submit"
+          >
+            Get Started
+          </button>
+        </form>
+      </div>
+      <div class="flex-1 md:flex-[1.3] flex justify-end">
+        <img
+          src="./assets/kids-3_orginial-removebg-preview.png"
+          class="w-full max-w-2xl"
+          alt=""
+        />
+      </div>
+    </section>
+    <!--Vocabulary learning level-->
+    <section class="mt-4 md:mt-16">
+      <h2 class="text-4xl font-bold mb-8 text-center">
+        <span class="text-red-600">Let's</span> Learn Vocabularies
+      </h2>
+      <div
+        id="level-container"
+        class="flex flex-wrap justify-center gap-5"
+      ></div>
+    </section>
+
+    <!-- Search vocabulary -->
+    <section class="flex justify-center pt-10">
+      <div class="join">
+        <div>
+          <label class="input validator join-item">
+            <input
+              id="input-search"
+              type="text"
+              placeholder="Search your vocabulary"
+            />
+          </label>
+        </div>
+        <button
+          id="btn-search"
+          class="btn bg-red-600 text-white border-red-600 join-item"
+        >
+          Search
+        </button>
+      </div>
+    </section>
+
+    <!-- Loader -->
+    <section class="flex justify-center items-center py-10">
+      <span
+        id="spinner"
+        class="loading loading-bars loading-xl text-red-600 hidden"
+      ></span>
+    </section>
+    <section
+      id="word-container"
+      class="bg-gray-100 p-10 my-5 w-11/12 mx-auto grid grid-cols-3 gap-5 mb-20"
+    >
+      <div class="text-center space-y-6 col-span-full font-bangla">
+        <p class="text-gray-400 text-md">
+          আপনি এখনো কোন Lesson Select করেন নি।
+        </p>
+        <h2 class="text-3xl font-bold">একটি Lesson Select করুন।</h2>
+      </div>
+    </section>
+    <!-- FAQ -->
+    <section class="w-11/12 mx-auto mb-20 space-y-2">
+      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title font-semibold">
+          1. How can I start learning English on this website?
+        </div>
+        <div class="collapse-content text-sm">
+          You can start by exploring our beginner lessons, interactive
+          exercises, and quizzes. We also offer structured courses to guide you
+          step by step.
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold">
+          2. Is this website free to use?
+        </div>
+        <div class="collapse-content text-sm">
+          Yes, all lessons and learning materials are completely free to use.
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold">
+          3. Do I need to create an account?
+        </div>
+        <div class="collapse-content text-sm">
+          No, you can start learning right away without signing up or logging in
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold">
+          4. How can I build my English vocabulary?
+        </div>
+        <div class="collapse-content text-sm">
+          Choose a lesson level and learn new words with their meanings,
+          pronunciation, and example sentences. Practice a few words every day,
+          review them regularly, and try using them in your own sentences when
+          speaking or writing. Small, consistent practice works better than
+          studying a lot in one sitting.
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title font-semibold">
+          5. Do you offer certificates for completed courses?
+        </div>
+        <div class="collapse-content text-sm">
+          Currently, we don’t offer certificates. Our focus is on helping you
+          learn and practice English at your own pace.
+        </div>
+      </div>
+    </section>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+
+    <dialog id="word_details" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div id="details-container" class="space-y-5"></div>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Footer -->
+    <footer
+      class="footer footer-horizontal footer-center bg-primary text-primary-content p-10"
+    >
+      <aside>
+        <img src="./assets/Shakh_farid_logo.png" class="w-20" alt="" />
+        <p class="font-bold">Shakh Farid Shohag</p>
+        <p>Frontend Developer | Software Engineer | WordPress Developer</p>
+        <p>
+          Copyright © <span id="year"></span> - All right reserved by
+          <a
+            class="underline hover:text-gray-300"
+            href="https://shakhfarid.com/"
+            >Shakh Farid</a
+          >
+          <script>
+            document.getElementById("year").textContent =
+              new Date().getFullYear();
+          </script>
+        </p>
+      </aside>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a href="https://www.linkedin.com/in/shakhfarid">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 640 640"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current"
+            >
+              <path
+                d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM165 266.2L231.5 266.2L231.5 480L165 480L165 266.2zM236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160C219.5 160 236.7 177.2 236.7 198.5zM413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480L413.9 480z"
+              />
+            </svg>
+          </a>
+          <a href="mailto:shakhfarid71@gmail.com">
+            <svg
+              width="30"
+              height="32"
+              viewBox="0 0 640 640"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current"
+            >
+              <path
+                d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"
+              />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/shohag427">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 640 640"
+              xmlns="http://www.w3.org/2000/svg"
+              class="fill-current"
+            >
+              <path
+                d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L258.2 544L258.2 398.2L205.4 398.2L205.4 320L258.2 320L258.2 286.3C258.2 199.2 297.6 158.8 383.2 158.8C399.4 158.8 427.4 162 438.9 165.2L438.9 236C432.9 235.4 422.4 235 409.3 235C367.3 235 351.1 250.9 351.1 292.2L351.1 320L434.7 320L420.3 398.2L351 398.2L351 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96z"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </footer>
+
+    <!-- Javascript file integration -->
+    <script src="script/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.font-bangla {
+  font-family: "Hind Siliguri", sans-serif;
+}
+/* .active {
+  background-color: #ea0035;
+  color: #fff;
+}
+.active:hover {
+  color: #fff;
+} */
+.btn-red {
+  color: #ea0035;
+  border-color: #ea0035;
+}
+
+.btn-red:hover {
+  background-color: #ea0035;
+  border-color: #ea0035;
+  color: #fff;
+}
+.btn-red.active,
+.btn-red.active:hover {
+  background-color: #ea0035;
+  border-color: #ea0035;
+  color: #fff;
+}
