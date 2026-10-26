@@ -1,3 +1,4 @@
+// Essentail feature of the application
 const createElements = (arr) => {
   const htmlElements = arr.map(
     (el) => `<span class="btn bg-[#EDF7FF]">${el}</span>`,
@@ -21,6 +22,7 @@ const manageSpinner = (status) => {
   }
 };
 
+// API's load and display data
 const loadLesson = () => {
   fetch("https://openapi.programming-hero.com/api/levels/all")
     .then((res) => res.json())
@@ -127,14 +129,14 @@ const displayLevelWord = (words) => {
         <div
         class="bg-white py-10 px-5 text-center rounded-md shadow-sm space-y-4"
         >
-            <h3 class="text-2xl font-bold">${word.word ? word.word : "শব্দ পাওয়া যায় নি"}</h3>
+            <h3 class="text-xl md:text-2xl font-bold">${word.word ? word.word : "শব্দ পাওয়া যায় নি"}</h3>
             <p class="font-semibold">Meaning / Pronunciation</p>
-            <div class="font-bangla text-2xl font-medium">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায় নি"} / ${word.pronunciation ? word.pronunciation : "Pronunciation পাওয়া যায় নি"}"</div>
+            <div class="font-bangla text-xl md:text-2xl font-medium">"${word.meaning ? word.meaning : "অর্থ পাওয়া যায় নি"} / ${word.pronunciation ? word.pronunciation : "Pronunciation পাওয়া যায় নি"}"</div>
             <div class="flex justify-between items-center">
             <button onclick="loadWordDetails(${word.id})" class="btn bg-[#1A91FF10] hover:bg-[#1A91FF60]">
                 <i class="fa-solid fa-circle-info"></i>
             </button>
-            <button onclick="pronounceWord('${word.word}')" class="btn bg-[#1A91FF10] hover:bg-[#1A91FF60]">
+            <button onclick="." class="btn bg-[#1A91FF10] hover:bg-[#1A91FF60]">
                 <i class="fa-solid fa-volume"></i>
             </button>
             </div>
@@ -167,7 +169,7 @@ document.getElementById("btn-search").addEventListener("click", () => {
   removeActive();
   const input = document.getElementById("input-search");
   const searchInput = input.value.trim().toLowerCase();
-  console.log(searchInput);
+  // console.log(searchInput);
 
   fetch("https://openapi.programming-hero.com/api/words/all")
     .then((res) => res.json())
