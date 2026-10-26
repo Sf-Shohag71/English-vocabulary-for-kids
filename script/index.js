@@ -6,11 +6,23 @@ const createElements = (arr) => {
   return htmlElements.join(" ");
 };
 
+// function pronounceWord(word) {
+//   const utterance = new SpeechSynthesisUtterance(word);
+//   utterance.lang = "en-EN"; // English
+//   // Lower values make the speech slower (default is 1.0)
+//   // utterance.rate = 0.75;
+//   window.speechSynthesis.speak(utterance);
+// }
 function pronounceWord(word) {
   const utterance = new SpeechSynthesisUtterance(word);
-  utterance.lang = "en-EN"; // English
+  utterance.lang = "en-US"; 
+  
+  // Lower values make the speech slower (default is 1.0)
+  utterance.rate = 0.5; 
+  
   window.speechSynthesis.speak(utterance);
 }
+
 
 const manageSpinner = (status) => {
   if (status) {
@@ -136,7 +148,7 @@ const displayLevelWord = (words) => {
             <button onclick="loadWordDetails(${word.id})" class="btn bg-[#1A91FF10] hover:bg-[#1A91FF60]">
                 <i class="fa-solid fa-circle-info"></i>
             </button>
-            <button onclick="." class="btn bg-[#1A91FF10] hover:bg-[#1A91FF60]">
+            <button onclick="pronounceWord('${word.word}')" class="btn bg-[#1A91FF10] hover:bg-[#1A91FF60]">
                 <i class="fa-solid fa-volume"></i>
             </button>
             </div>
